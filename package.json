@@ -26,6 +26,8 @@
     "glitch",
     "express"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^4.0.0"
+  },
   "author": "aboutDavid"
 }
