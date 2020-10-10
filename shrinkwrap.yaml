@@ -1,4 +1,5 @@
 dependencies:
+  '@tailwindcss/ui': 0.6.2
   tailwindcss: 1.8.13
   webpack: 4.44.2
 devDependencies:
@@ -1107,6 +1108,33 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-PyRA9sm1Yayuj5OIoJ1hGt2YISX45w9WcFbh6ddT0Z/0yaFxOtGLInr4jUfU1EAFVs0Yfyfev4RNwBlUaHdlDQ==
+  /@tailwindcss/custom-forms/0.2.1:
+    dependencies:
+      lodash: 4.17.20
+      mini-svg-data-uri: 1.2.3
+      traverse: 0.6.6
+    dev: false
+    peerDependencies:
+      tailwindcss: ^1.0
+    resolution:
+      integrity: sha512-XdP5XY6kxo3x5o50mWUyoYWxOPV16baagLoZ5uM41gh6IhXzhz/vJYzqrTb/lN58maGIKlpkxgVsQUNSsbAS3Q==
+  /@tailwindcss/typography/0.2.0:
+    dev: false
+    peerDependencies:
+      tailwindcss: ^1.5.0
+    resolution:
+      integrity: sha512-aPgMH+CjQiScLZculoDNOQUrrK2ktkbl3D6uCLYp1jgYRlNDrMONu9nMu8LfwAeetYNpVNeIGx7WzHSu0kvECg==
+  /@tailwindcss/ui/0.6.2:
+    dependencies:
+      '@tailwindcss/custom-forms': 0.2.1
+      '@tailwindcss/typography': 0.2.0
+      hex-rgb: 4.2.0
+      postcss-selector-parser: 6.0.4
+    dev: false
+    peerDependencies:
+      tailwindcss: ^1.8.3
+    resolution:
+      integrity: sha512-i0sWpAgnF4VitNqaf4JVDuiaQ3MmREwn7gmNYR6lvX29avYLLNOHf0DgzhVEfwfB+CJ6WjZvPoJuDYExZgWlwQ==
   /@types/cacheable-request/6.0.1:
     dependencies:
       '@types/http-cache-semantics': 4.0.0
@@ -3319,6 +3347,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==
+  /hex-rgb/4.2.0:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-I7DkKeQ2kR2uyqgbxPgNgClH/rfs1ioKZhZW8VTIAirsxCR5EyhYeywgZbhMScgUbKCkgo6bb6JwA0CLTn9beA==
   /hmac-drbg/1.0.1:
     dependencies:
       hash.js: 1.1.7
@@ -4169,6 +4203,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-wXqjST+SLt7R009ySCglWBCFpjUygmCIfD790/kVbiGmUgfYGuB14PiTd5DwVxSV4NcYHjzMkoj5LjQZwTQLEA==
+  /mini-svg-data-uri/1.2.3:
+    dev: false
+    resolution:
+      integrity: sha512-zd6KCAyXgmq6FV1mR10oKXYtvmA9vRoB6xPSTUJTbFApCtkefDnYueVR1gkof3KcdLZo1Y8mjF2DFmQMIxsHNQ==
   /minimalistic-assert/1.0.1:
     dev: false
     resolution:
@@ -5839,6 +5877,10 @@ packages:
       node: '>=0.8'
     resolution:
       integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==
+  /traverse/0.6.6:
+    dev: false
+    resolution:
+      integrity: sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
   /tslib/1.14.1:
     resolution:
       integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
@@ -6285,6 +6327,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@tailwindcss/ui': ^0.6.2
   tailwindcss: ^1.8.12
   webpack: ^4.44.2
   webpack-cli: ^4.0.0
