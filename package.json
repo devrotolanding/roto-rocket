@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "tailwindcss": "^1.8.12",
-    "express": "^4.17.1"
+    "webpack": "^4.44.2"
   },
   "engines": {
     "node": "12.x"
