@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "tailwindcss": "^1.8.12",
+    "@tailwindcss/ui": "^0.6.2",
     "webpack": "^4.44.2"
   },
   "engines": {
