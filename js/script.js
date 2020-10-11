@@ -1,1 +1,0 @@
-document.body.appendChild(document.getElementsByTagName("template")[0].content.cloneNode(true));
