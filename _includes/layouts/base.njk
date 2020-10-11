@@ -26,9 +26,9 @@
                         </button>
                     </div>
                     <!-- Navbar brand -->
-                    <a href="#" class="navbar-brand">
-                        <img src="..." alt="..." />
-                        Brand
+                    <a href="/" class="navbar-brand">
+                        <img src="{{ metadata.icon }}" alt="..." />
+                        {{ metadata.title }}
                     </a>
                     <!-- Navbar content with sign up button -->
                     <div class="navbar-content ml-auto">
@@ -39,7 +39,7 @@
 
                 <!-- Content -->
                 <div class="container-fluid">
-                    ...
+                    {{ content | safe }}
                 </div>
 
                 <!-- Static bottom navbar -->
