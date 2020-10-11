@@ -7,31 +7,23 @@ layout: layouts/home.njk
       Contact me
     </h2>
 <form action="..." method="..." class="w-400 mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-  <!-- Input -->
+  <!-- Name -->
   <div class="form-group">
-    <label for="full-name" class="required">Name</label>
-    <input type="text" class="form-control" id="full-name" placeholder="" required="required">
+    <label for="name" class="required">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="" required="required" name="name">
+  </div>
+  
+<!-- Email -->
+  <div class="form-group">
+    <label for="email" class="required">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="" required="required" name="email">
   </div>
 
-  <div class="form-group">
-    <label for="full-name" class="required">Email</label>
-    <input type="email" class="form-control" id="email" placeholder="" required="required">
-  </div>
 
-
-  <!-- Textarea -->
+  <!-- Message -->
   <div class="form-group">
     <label for="description">Message</label>
-    <textarea class="form-control" id="description" placeholder="Write a short description about yourself."></textarea>
-  </div>
-
-
-  <!-- Checkbox -->
-  <div class="form-group">
-    <div class="custom-checkbox">
-      <input type="checkbox" id="agree-to-terms">
-      <label for="agree-to-terms">I agree to all the <a href="#" class="hyperlink">terms and conditions</a></label>
-    </div>
+    <textarea class="form-control" id="description" placeholder="" name="message" required="required"></textarea>
   </div>
 
   <!-- Submit button -->
