@@ -6,9 +6,15 @@
 <p>
 {{ post.description }}
 </p>
-<span class="badge">
- <i class="fa fa-comments text-primary mr-5" aria-hidden="true"></i> 5 comments <!-- text-primary = color: primary-color, mr-5 = margin-right: 0.5rem (5px) -->
-</span>
+    {% for tag in post.data.tags %}
+      {%- if collections.tagList.indexOf(tag) != -1 -%}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <span class="badge">
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+      </span>
+      {%- endif -%}
+    {% endfor %}
+
   <div class="text-right">
     <a href="{{ post.url | url }}" class="btn">Read more</a>
   </div>
