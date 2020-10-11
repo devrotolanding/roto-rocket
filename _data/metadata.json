@@ -2,6 +2,7 @@
   "title": "Rocket11ty",
   "description": "Rocket11ty is a blog template for 11ty.",
   "url": "",
+  "defaultDarkMode": "true",
   "icon": "https://cdn.glitch.com/f648f832-1dab-41a0-a2ec-8e3be00e552b%2F1F680_color.png?v=1602371731988",
   "author": "Rocket11ty"
 }

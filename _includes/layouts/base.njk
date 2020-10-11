@@ -82,7 +82,7 @@
   else if (halfmoon.getPreferredMode() == "dark-mode") {
     halfmoon.toggleDarkMode();
   }
-  else if (halfmoon.getPreferredMode() == "not-set") {
+  else if (halfmoon.getPreferredMode() == "not-set" && {{ metadata.defaultDarkMode }}) {
     halfmoon.toggleDarkMode();
   }
 </script>

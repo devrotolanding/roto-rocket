@@ -3,7 +3,8 @@ title: Ea nisi quae est incidunt molestiae.
 description: This is a post on My Blog about agile frameworks.
 date: 2020-10-11
 tags:
-  - another-tag
+  - tag-1
+  - example
 layout: layouts/post.njk
 ---
 
