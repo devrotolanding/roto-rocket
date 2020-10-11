@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addShortcode("getYear", function() {
-    return new Date().getFullYear();
+    return new Date().getFullYear().toString();
   });
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(

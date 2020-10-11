@@ -9,6 +9,7 @@
         <script src="/js/halfmoon.js"></script>
         <!-- Require external CSS files -->
         <link rel="stylesheet" href="/css/halfmoon.css" />
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
         <!-- Page wrapper -->
@@ -56,6 +57,16 @@
     </body>
     <footer>
         <script src="js/script.js"></script>
-  
+  <script type="text/javascript">
+  if (halfmoon.getPreferredMode() == "light-mode") {
+    // Light mode is preferred
+  }
+  else if (halfmoon.getPreferredMode() == "dark-mode") {
+    halfmoon.toggleDarkMode();
+  }
+  else if (halfmoon.getPreferredMode() == "not-set") {
+    halfmoon.toggleDarkMode();
+  }
+</script>
     </footer>
 </html>
