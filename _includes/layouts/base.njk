@@ -39,12 +39,21 @@
                     <div class="navbar-content">
                        
                     </div>
-                    <!-- Navbar brand -->
+                    <!-- Icon/brand -->
                     <a href="/" class="navbar-brand">
                         <img src="{{ metadata.icon }}" alt="..." />
                         {{ metadata.title }}
                     </a>
-                    <!-- Navbar content with sign up button -->
+                    <!-- Navbar buttons -->
+                    <ul class="navbar-nav d-none d-md-flex">
+                    <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                    </li>                    
+                    <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                    </li>
+                    </ul>
+                    <!-- Darkmode toggle -->
                     <div class="navbar-content ml-auto">
                         <!-- ml-auto = margin-left: auto -->
                       <button class="btn btn-primary" type="button" onclick="halfmoon.toggleDarkMode();">🌙</button>
