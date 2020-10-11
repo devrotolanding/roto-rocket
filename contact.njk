@@ -1,0 +1,41 @@
+---
+layout: layouts/home.njk
+---
+<div class="w-400 mw-full" style="display:block;margin-left:auto;margin-right:auto;">
+<div class="card">
+    <h2 class="card-title">
+      Contact me
+    </h2>
+<form action="..." method="..." class="w-400 mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+  <!-- Input -->
+  <div class="form-group">
+    <label for="full-name" class="required">Name</label>
+    <input type="text" class="form-control" id="full-name" placeholder="" required="required">
+  </div>
+
+  <div class="form-group">
+    <label for="full-name" class="required">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="" required="required">
+  </div>
+
+
+  <!-- Textarea -->
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea class="form-control" id="description" placeholder="Write a short description about yourself."></textarea>
+  </div>
+
+
+  <!-- Checkbox -->
+  <div class="form-group">
+    <div class="custom-checkbox">
+      <input type="checkbox" id="agree-to-terms">
+      <label for="agree-to-terms">I agree to all the <a href="#" class="hyperlink">terms and conditions</a></label>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+</div>
+</div>
