@@ -1,12 +1,12 @@
-const cacheName = 'rocket11ty';
+---
+permalink: /js/sw.js
+---
+const cacheName = '{{ metadata.title }}';
 const precacheResources = [
-  '/',
-  '/index.html',
-  '/css/halfmoon.css',
-{%- for page in collections.all %}
-{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
-'{{ absoluteUrl }}'
-{%- endfor %}
+"/",
+"/index.html",
+"/js/halfmoon.js",
+"/js/manifest.json"
 ];
 
 self.addEventListener('install', event => {
