@@ -14,7 +14,7 @@
       </span>
       {%- endif -%}
     {% endfor %}
-
+   <br><br><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
   <div class="text-right">
     <a href="{{ post.url | url }}" class="btn">Read more</a>
   </div>
