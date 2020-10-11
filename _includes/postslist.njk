@@ -1,0 +1,13 @@
+{% for post in postslist | reverse %}
+<div class="card">
+<h2 class="card-title">
+{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
+</h2>
+<p>
+{{ post.description }}
+</p>
+  <div class="text-right">
+    <a href="{{ post.url | url }}" class="btn">Read more</a>
+  </div>
+</div>
+{% endfor %}
