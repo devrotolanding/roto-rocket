@@ -33,7 +33,7 @@
                     <!-- Navbar content with sign up button -->
                     <div class="navbar-content ml-auto">
                         <!-- ml-auto = margin-left: auto -->
-                        <button class="btn btn-primary" type="button">Sign up</button>
+                      <button class="btn btn-primary" type="button" onclick="toggleDemo()"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
                     </div>
                 </nav>
 
@@ -60,5 +60,11 @@
     </body>
     <footer>
         <script src="js/script.js"></script>
+        <script type="text/javascript">
+  // Dark mode toggle demo
+  function toggleDemo() {
+    halfmoon.toggleDarkMode();
+  }
+</script>
     </footer>
 </html>
