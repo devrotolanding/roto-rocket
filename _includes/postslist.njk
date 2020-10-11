@@ -4,7 +4,7 @@
 {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
 </h2>
 <p>
-{{ post.description }}
+{{ post.data.description }}
 </p>
     {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
@@ -14,7 +14,7 @@
       </span>
       {%- endif -%}
     {% endfor %}
-   <br><br><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+   <br><br>Written on <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
   <div class="text-right">
     <a href="{{ post.url | url }}" class="btn">Read more</a>
   </div>
