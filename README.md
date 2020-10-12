@@ -1,5 +1,6 @@
 # rocket11ty
 ***
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c0521ca1-b532-44c0-b265-d4531b676f98/deploy-status)](https://app.netlify.com/sites/xn-11ty-4s83c/deploys)
 
 Welcome to Rocket11ty, a very simple yet elegant 11ty template.
 
