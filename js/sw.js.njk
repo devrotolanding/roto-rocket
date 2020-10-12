@@ -4,11 +4,13 @@ eleventyExcludeFromCollections: true
 ---
 const cacheName = '{{ metadata.title | lower }}';
 const precacheResources = [
-{%- for page in collections.all %}{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}"{{ absoluteUrl }}",{%- endfor %}
+{%- for page in collections.all %}{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+"{{ absoluteUrl }}",{%- endfor %}
 "/index.html",
 "/js/halfmoon.js",
-"",
-"/js/manifest.json"
+"/css/style.css",
+"/css/halfmoon.css",
+"/js/manifest.json",
 ];
 
 self.addEventListener('install', event => {
