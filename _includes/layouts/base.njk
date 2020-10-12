@@ -25,8 +25,8 @@
         <link rel="stylesheet" href="/css/halfmoon.css" />
         <!-- Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     </head>
     <body>
         <!-- Page wrapper -->
@@ -59,7 +59,12 @@
                       <button class="btn btn-primary" type="button" onclick="halfmoon.toggleDarkMode();">🌙</button>
                     </div>
                 </nav>
-
+                <!-- Start deleting! -->
+<div class="alert alert-secondary filled-dm" role="alert">
+  <h4 class="alert-heading">Welcome to Rocket11ty!</h4>
+  This is a secondary alert that will be filled in dark mode.
+</div>
+<!-- Stop deleting! Happy Blogging! -->
                 <!-- Content -->
                 <div class="container-fluid">
                     {{ content | safe }}
