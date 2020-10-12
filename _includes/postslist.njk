@@ -1,6 +1,9 @@
 {% for post in postslist | reverse %}
 
 <div class="card">
+{% if not post.data.image or (post.data.image | trim) === "" %}
+<img src="{{ post.data.image }}" class="img-fluid rounded-top" alt="Header Image" onerror="this.style.display='none';">
+{% endif %}
 <h2 class="card-title"><a href="{{ post.url | url }}" class="btn">
 {% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}
 </a></h2>
