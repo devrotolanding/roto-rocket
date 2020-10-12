@@ -16,7 +16,8 @@ layout: layouts/post.njk
 <li>Mobile Friendly design</li>
 <li>Light and Dark theme. (Provided by <a href="https://www.gethalfmoon.com/">Halfmoon.</a>)</li>
 <li>A contact form (Only on Netlify)</li>
-<li>Built-in sitemap</li><li>RSS feed for your blog.</li>
+<li>Built-in sitemap</li>
+<li>RSS feed for your blog.</li>
 <li>NetlifyCMS to easily publish your blog (only on Netlify)</li>
 </ul>
 <p>Now, the blog system/sitemap/RSS feed was provided by the base template which can be found <a href="https://github.com/11ty/eleventy-base-blog">here.</a> because, why recreate something that already works?</p>
