@@ -1,12 +1,12 @@
 ---
+layout: layouts/post.njk
+image: ""
 title: Welcome to Rocket11ty
-description: An intro for Rocket11ty
 date: 2020-10-11
-image: https://cdn.glitch.com/f648f832-1dab-41a0-a2ec-8e3be00e552b%2Fryan-clark-Hl1FQm90z9U-unsplash.jpg
+description: An intro for Rocket11ty
 tags:
   - rocket11ty
   - example
-layout: layouts/post.njk
 ---
 <p>Welcome to Rocket11ty! A simple yet elegant 11ty tepmlate. But, why not other 11ty templates?</p>
 <p>Out of the box it contains:</p>
