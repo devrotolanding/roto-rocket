@@ -3,10 +3,10 @@ permalink: /manifest.json
 eleventyExcludeFromCollections: true
 ---
 {
-   "name":"{{ title }}",
-   "short_name":"{{ title }}",
+   "name":"{{ metadata.title }}",
+   "short_name":"{{ metadata.title }}",
    "start_url": ".",
-   "description": "{{ description }}",
+   "description": "{{ metadata.description }}",
    "icons":[
       {
          "src":"/img/android-chrome-192x192.png",
