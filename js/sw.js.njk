@@ -1,11 +1,13 @@
 ---
 permalink: /js/sw.js
+eleventyExcludeFromCollections: true
 ---
-const cacheName = '{{ metadata.title }}';
+const cacheName = '{{ metadata.title | lower }}';
 const precacheResources = [
-"/",
+{%- for page in collections.all %}{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}"{{ absoluteUrl }}",{%- endfor %}
 "/index.html",
 "/js/halfmoon.js",
+"",
 "/js/manifest.json"
 ];
 
