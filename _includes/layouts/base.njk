@@ -23,7 +23,6 @@
         <link rel="manifest" href="manifest.json" />
         <!-- Require external CSS files -->
         <link rel="stylesheet" href="/css/halfmoon.css" />
-        <link rel="stylesheet" href="/css/style.css" />
         <!-- Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,11 +50,8 @@
                     <a href="/" class="nav-link">Home</a>
                     </li>                    
                     <li class="nav-item">
-                    <a href="/posts" class="nav-link">Blog</a>
+                    <a href="/" class="nav-link">Home</a>
                     </li>
-                      <li class="nav-item">
-                       <a href="/contact" class="nav-link">Contact</a>
-                        </li>
                     </ul>
                     <!-- Darkmode toggle -->
                     <div class="navbar-content ml-auto">
@@ -70,18 +66,22 @@
                 </div>
 
                 <!-- Static bottom navbar -->
-
-            </div>
-        </div>
-    </body>
-                 
+                <nav class="navbar navbar-static-bottom">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- ml-auto = margin-left: auto -->
+                        <li class="nav-item">
+                            <a href="/contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                     <!-- Navbar text -->
                     <span class="navbar-text">
                         &copy; <div id="year">2020</div>, {{ metadata.author.name }}. All rights reserved.
                     </span>
-                
+                </nav>
+            </div>
+        </div>
+    </body>
     <footer>
-
         <script src="/js/script.js"></script>
   <script type="text/javascript">
   // Do halfmoon stuff
