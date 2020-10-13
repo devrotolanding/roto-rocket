@@ -1,6 +1,6 @@
 {
   "name": "rocket11ty",
-  "version": "1",
+  "version": "1.0.0",
   "description": "A simple Node app built on Express, instantly up and running.",
   "scripts": {
     "start": "npx @11ty/eleventy --serve --port=3000",
