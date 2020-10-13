@@ -107,18 +107,15 @@
 <footer>
     <script src="/js/script.js"></script>
     <script type="text/javascript">
-        // Do halfmoon stuff
-        if (halfmoon.getPreferredMode() == "light-mode") {
-            // Light mode is preferred
-        } else if (halfmoon.getPreferredMode() == "dark-mode") {
-            halfmoon.toggleDarkMode();
-        } else if (halfmoon.getPreferredMode() == "not-set" && {
-            {
-                metadata.defaultDarkMode
-            }
-        }) {
-            halfmoon.toggleDarkMode();
-        }
+  if (halfmoon.getPreferredMode() == "light-mode") {
+    // Light mode is preferred
+  }
+  else if (halfmoon.getPreferredMode() == "dark-mode") {
+    halfmoon.toggleDarkMode();
+  }
+  else if (halfmoon.getPreferredMode() == "not-set" && {{ metadata.defaultDarkMode }}) {
+    halfmoon.toggleDarkMode();
+  }
     </script>
 </footer>
 
