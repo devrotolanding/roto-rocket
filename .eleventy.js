@@ -13,13 +13,15 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.setDataDeepMerge(true);
-
+// Mimify HTML, CSS and JS files
     eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( outputPath.endsWith(".html") ) {
+    if( outputPath.endsWith(".html") || outputPath.endsWith(".css") || outputPath.endsWith(".js") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true, 
+        minifyJS: true, 
+        minifyCSS: true
       });
       return minified;
     }
