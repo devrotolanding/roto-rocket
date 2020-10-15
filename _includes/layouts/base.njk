@@ -46,6 +46,19 @@
   gtag('config', '{{ metadata.googleAnalyticsId }}');
 </script>
 {% endif %}
+{% if metadata.facebookPixelId !== "" or not metadata.facebookPixelId  %}
+<!-- Facebook Pixel Code -->
+<script>
+!function(e,n,t,o,c,s){e.fbq||(o=e.fbq=function(){o.callMethod?o.callMethod.apply(o,arguments):o.queue.push(arguments)},e._fbq||(e._fbq=o),(o.push=o).loaded=!0,o.version="2.0",o.queue=[],(c=n.createElement(t)).async=!0,c.src="https://connect.facebook.net/en_US/fbevents.js",(s=n.getElementsByTagName(t)[0]).parentNode.insertBefore(c,s))}(window,document,"script");
+fbq('init', '{{ metadata.facebookPixelId }}');
+fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none" 
+       src="https://www.facebook.com/tr?id={{ metadata.facebookPixelId }}&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+{% endif %}
 </head>
 
 <body>
