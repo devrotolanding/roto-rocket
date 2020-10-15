@@ -107,17 +107,8 @@
 </body>
 <footer>
     <script src="/js/script.js"></script>
-    <script type="text/javascript">
-  if (halfmoon.getPreferredMode() == "light-mode") {
-    // Light mode is preferred
-  }
-  else if (halfmoon.getPreferredMode() == "dark-mode") {
-    halfmoon.toggleDarkMode();
-  }
-  else if (halfmoon.getPreferredMode() == "not-set" && {{ metadata.defaultDarkMode }}) {
-    halfmoon.toggleDarkMode();
-  }
-    </script>
+    <!-- Do halfmoon preffered theme -->
+    <script type="text/javascript">"light-mode"==halfmoon.getPreferredMode()||("dark-mode"==halfmoon.getPreferredMode()||"not-set"==halfmoon.getPreferredMode()&&{{ metadata.defaultDarkMode }})&&halfmoon.toggleDarkMode();</script>
 </footer>
 
 </html>
