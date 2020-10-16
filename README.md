@@ -2,7 +2,7 @@
 ***
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c0521ca1-b532-44c0-b265-d4531b676f98/deploy-status)](https://app.netlify.com/sites/rocket11ty/deploys)
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aboutDavid/rocket11ty)
-
+[![remix this](https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726)](https://glitch.com/edit/?utm_content=project_xn--11ty-4s83c&utm_source=remix_this&utm_medium=button&utm_campaign=glitchButton#!/remix/xn--11ty-4s83c)
 Welcome to Rocket11ty, a very simple yet elegant 11ty template.
 
 Features: 
