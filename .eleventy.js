@@ -3,24 +3,31 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
+  // Add plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(embedEverything);
 
   eleventyConfig.setDataDeepMerge(true);
-// Mimify HTML, CSS and JS files
-    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if( outputPath.endsWith(".html") || outputPath.endsWith(".css") || outputPath.endsWith(".js") ) {
+  // Mimify HTML, CSS and JS files
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (
+      outputPath.endsWith(".html") ||
+      outputPath.endsWith(".css") ||
+      outputPath.endsWith(".js")
+    ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true, 
-        minifyJS: true, 
+        collapseWhitespace: true,
+        minifyJS: true,
         minifyCSS: true
       });
       return minified;
@@ -28,7 +35,7 @@ module.exports = function(eleventyConfig) {
 
     return content;
   });
-  
+
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
