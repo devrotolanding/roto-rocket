@@ -214,6 +214,7 @@ a[href].post-tag:visited {
   text-decoration: none;
   font-style: normal;
   margin-left: .1em;
+  display: none;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
@@ -224,4 +225,7 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+.direct-link:hover {
+  display: block;
 }

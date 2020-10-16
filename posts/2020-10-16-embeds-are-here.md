@@ -12,6 +12,8 @@ tags:
 ---
 
 Guess what? Embeds are here!
+What are embeds? Bascially, it's where you embed another site on your site. For example, embeding a tweet into a blog.
+
 Here is are some demos:
 
 ### Youtube:
