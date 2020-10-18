@@ -7,6 +7,8 @@ description: An intro for Rocket11ty
 tags:
   - rocket11ty
   - example
+  - announcement
+  - test
 ---
 The first release of Rocket11ty. Whats new?
 

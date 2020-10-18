@@ -4,10 +4,10 @@
   "url": "",
   "defaultDarkMode": "true",
   "googleAnalyticsId": "",
-  "facebookPixelId":"",
+  "facebookPixelId": "",
   "forceHTTPS": "true",
   "icon": "https://cdn.glitch.com/f648f832-1dab-41a0-a2ec-8e3be00e552b%2F1F680_color.png?v=1602371731988",
-    "feed": {
+  "feed": {
     "subtitle": "Rocket11ty is a blog template for 11ty.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",

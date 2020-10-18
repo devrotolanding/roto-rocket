@@ -7,7 +7,6 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const htmlmin = require("html-minifier");
-const charts = require("eleventy-charts");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -15,7 +14,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(embedEverything);
-  eleventyConfig.addPlugin(charts);
 
   eleventyConfig.setDataDeepMerge(true);
   // Mimify HTML, CSS and JS files
