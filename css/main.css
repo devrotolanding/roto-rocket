@@ -35,9 +35,6 @@ p,
 a[href] {
   color: var(--blue);
 }
-a[href]:visited {
-  color: var(--navy);
-}
 main {
   padding: 1rem;
 }

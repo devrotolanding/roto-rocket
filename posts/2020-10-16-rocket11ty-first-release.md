@@ -8,8 +8,6 @@ tags:
   - rocket11ty
   - example
 ---
-## Introducing, Rocket11ty 1.0
-
 The first release of Rocket11ty. Whats new?
 
 - Google Analytics
